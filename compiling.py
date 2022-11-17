@@ -50,7 +50,7 @@ class CompilingResult:
             self.driver.quit()
 
     def dump_result(self):
-        '''Сортируем нас словарь по количеству и сохраняем в файл'''
+        '''Сортируем наш словарь по количеству и сохраняем в файл'''
 
         with open('result.txt', 'w') as outfile:
             for key, value in sorted(self.items.items(),
